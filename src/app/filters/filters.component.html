@@ -1,0 +1,27 @@
+<div class="filter-bar">
+    <h5>Filters</h5>
+    <p>Launch Year</p>
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+    
+    <div  class="row filters">
+        <div *ngFor="let a of arr" class="col-lg-6">
+            <button class="btn btn-primary button col-xs-6" (click)="onClick(a)">{{a}}</button>
+        </div>
+    </div>
+    <p>Successful Launch</p>
+    
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+    
+    <div class="row filters col-lg-12">
+        <button class="btn btn-primary button" (click)="onSuccessLaunch(true)" >True</button>
+        <button class="btn btn-primary button2" (click)="onSuccessLaunch(false)">False</button>
+    </div>
+    
+    <p>Successful Landing</p>
+    
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+    <div class="row filters col-lg-12">
+        <button class="btn btn-primary button" (click)="onSuccessLanding(true)">True</button>
+        <button class="btn btn-primary button2" (click)="onSuccessLanding(false)">False</button>
+    </div>
+</div>

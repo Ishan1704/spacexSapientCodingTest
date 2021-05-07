@@ -1,0 +1,18 @@
+<div class="row">
+    <ng-container *ngFor="let card of cards">
+        <div class="col-lg-3 col-sm-12">
+            <div class="card" style="width: 18rem; background-color: white;">
+                <div class="img-body">
+                    <img class="card-img-top img" [src]="card.links.mission_patch" alt="Card image cap">
+                </div>
+                <div class="card-body"> 
+                    <h5 class="card-title title">{{card.mission_name}}</h5>
+                    <li>Mission Ids: {{card.mission_id}}</li>
+                    <li>Launch Year: {{card.launch_year}}</li>
+                    <li>Successful Launch: {{card.launch_success}}</li>
+                    <li>Successful Landing: {{card.launch_landing}}</li>
+                </div>
+            </div>
+        </div>
+    </ng-container>    
+</div>
